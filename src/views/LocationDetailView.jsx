@@ -56,7 +56,7 @@ function LocationDetailView() {
         <p>{city.arrivalDate}</p>
         </div>
         <div className="Img-Slider">
-          <Swiper //try to do this component in the components folder
+          <Swiper //ty to do this component in the components folder
             modules={[EffectFade]}
             effect="fade"
             slidesPerView={1}

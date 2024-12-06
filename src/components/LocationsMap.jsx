@@ -1,17 +1,17 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { PropTypes } from "prop-types";
+import LoadingAnim from "./loadingAnim";
 import "leaflet/dist/leaflet.css";
 
 function LocationsMap({ locations }) {
   LocationsMap.propTypes = {
     locations: PropTypes.object,
   };
-  console.log(locations)
+  console.log(typeof(locations));
   return (
     <div>
-      {(locations.coordinates) &&
-      locations.coordinates.length > 0 ? (
+      {locations.coordinates && locations.coordinates.length > 0 ? (
         <MapContainer
           center={locations.coordinates}
           zoom={12}
@@ -26,7 +26,9 @@ function LocationsMap({ locations }) {
           </>
         </MapContainer>
       ) : (
-        <div>Loading Coordinates</div>
+        <div className="LoadingAnim-container">
+          <LoadingAnim />
+        </div>
       )}
     </div>
   );

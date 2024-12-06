@@ -3,8 +3,8 @@
       "id": 1,
       "country": "Portugal",
       "city": "Porto",
-      "arrivalDate": "2024-11-11",
-      "departureDate": "2024-11-14",
+      "arrivalDate": "2022-12-19",
+      "departureDate": "2022-12-20",
       "coordinates": [
         41.15,
         -8.62
@@ -33,8 +33,8 @@
       "id": 2,
       "country": "Spain",
       "city": "Barcelona",
-      "arrivalDate": "2024-11-12",
-      "departureDate": "2024-11-14",
+      "arrivalDate": "2022-08-15",
+      "departureDate": "2022-08-20",
       "coordinates": [
         41.38,
         2.13
@@ -63,8 +63,8 @@
       "id": 3,
       "country": "Spain",
       "city": "Combarro",
-      "arrivalDate": "2024-11-13",
-      "departureDate": "2024-11-14",
+      "arrivalDate": "2024-09-23",
+      "departureDate": "2024-09-27",
       "coordinates": [
         42.43,
         -8.70
@@ -93,8 +93,8 @@
       "id": 4,
       "country": "Netherlands",
       "city": "Amsterdam",
-      "arrivalDate": "2024-11-14",
-      "departureDate": "2024-11-14",
+      "arrivalDate": "2019-05-29",
+      "departureDate": "2019-06-01",
       "coordinates": [
         52.37,
         4.89
@@ -123,8 +123,8 @@
         "id": 5,
         "country": "Portugal",
         "city": "Sintra",
-        "arrivalDate": "2024-11-15",
-        "departureDate": "2024-11-14",
+        "arrivalDate": "2022-07-29",
+        "departureDate": "2022-08-03",
         "coordinates": [
         38.79,
         -9.38
