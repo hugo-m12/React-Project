@@ -45,13 +45,15 @@ function HomeView() {
         )}
       </section>
       <h2 className="detail-text">Visited Locations</h2>
-      <section className="globe-section">
-        <div>
-          <LocationsGlobe />
-        </div>
-      </section>
+      
     </>
   );
 }
 
 export default HomeView;
+
+/*<section className="globe-section">
+        <div>
+          <LocationsGlobe />
+        </div>
+      </section>*/ //component broken
