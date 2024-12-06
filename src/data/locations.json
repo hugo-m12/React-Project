@@ -1,0 +1,152 @@
+[
+    {
+      "id": 1,
+      "country": "Portugal",
+      "city": "Porto",
+      "arrivalDate": "2024-11-11",
+      "departureDate": "2024-11-14",
+      "coordinates": [
+        41.15,
+        -8.62
+      ],
+      "description":"Porto is a vibrant city in northern Portugal along the Douro River, boasting a rich history dating back to Roman times. Its Ribeira neighborhood, features colorful tile-adorned buildings and narrow cobblestone streets. The city is famous for its iconic Luis I Bridge, designed by Gustave Eiffel's engineering company, and its cultural attractions such as the Serralves Museum and Porto Cathedral,Porto is renowned for its gastronomy, particularly Port wine produced exclusively in the Douro Valley region, and traditional dishes like Francesinha and Bacalhau à Brás. As an industrial center, it has been instrumental in Portugal's economic development, hosting major industries including textiles, shipbuilding, and manufacturing.The city is home to the prestigious University of Porto and numerous research centers and innovation hubs, fostering technological advancement and entrepreneurship. This unique blend of history, culture, and modernity makes Porto a fascinating destination for tourists and a thriving urban center for its residents.",
+      "LocationImages": [
+        {
+          "filename":"1",
+          "path": "/src/assets/images/location-images/porto/1.JPG"
+        },
+        {
+          "filename":"2",
+          "path": "/src/assets/images/location-images/porto/2.JPG"
+        },
+        {
+          "filename":"3",
+          "path": "/src/assets/images/location-images/porto/3.JPG"
+        }
+      ],
+      "thumbnail": {
+        "filename": "3",
+        "path": "/src/assets/images/location-images/porto/3.JPG"
+    }
+    },
+    {
+      "id": 2,
+      "country": "Spain",
+      "city": "Barcelona",
+      "arrivalDate": "2024-11-12",
+      "departureDate": "2024-11-14",
+      "coordinates": [
+        41.38,
+        2.13
+      ],
+      "description":"Barcelona is a vibrant coastal city in northeastern Spain, known for its rich cultural heritage and stunning architecture. Founded as a Roman settlement, it has evolved over centuries, showcasing a unique blend of medieval and modern styles. The city is famous for its iconic landmarks such as La Sagrada Familia, Park Güell, and Casa Batlló, designed by Antoni Gaudí, which reflect its status as a UNESCO World Heritage Site.Barcelona boasts a thriving cultural scene, featuring world-class museums like the Picasso Museum and MACBA (Museum of Contemporary Art). Its gastronomy is renowned for dishes such as paella, tapas, and seafood, complemented by excellent Catalan wines.As the capital of Catalonia, Barcelona plays a significant role in Spain's economy and politics. It hosts numerous international events and conferences, including the Mobile World Congress. The city is also home to several prestigious universities and research centers, fostering innovation and entrepreneurship.From its bustling beaches along La Rambla to the historic Gothic Quarter, Barcelona offers a unique blend of history, culture, and modernity, making it one of Europe's most popular tourist destinations and a vibrant urban center for its residents.",
+      "LocationImages": [
+        {
+          "filename":"1",
+          "path": "/src/assets/images/location-images/barcelona/1.JPG"
+        },
+        {
+          "filename":"2",
+          "path": "/src/assets/images/location-images/barcelona/2.JPG"
+        },
+        {
+          "filename":"3",
+          "path": "/src/assets/images/location-images/barcelona/3.JPG"
+        }
+      ],
+      "thumbnail": {
+        "filename": "3",
+        "path": "/src/assets/images/location-images/barcelona/3.JPG"
+    }
+    },
+    {
+      "id": 3,
+      "country": "Spain",
+      "city": "Combarro",
+      "arrivalDate": "2024-11-13",
+      "departureDate": "2024-11-14",
+      "coordinates": [
+        42.43,
+        -8.70
+      ],
+      "description":"Combarro is a charming fishing village located on the coast of Galicia, in northwestern Spain. Situated on the banks of the Pontevedra estuary, it's part of the municipality of Poio. This picturesque town is known for its well-preserved ancient architecture, featuring numerous stone granaries called \" horreos \" that line the waterfront.Combarro's historic center is a maze of narrow cobblestone streets and alleyways, adorned with flowers and vines. The village is surrounded by lush green hills and offers breathtaking views of the estuary and the nearby islands.While small in size, Combarro has gained popularity among tourists seeking authentic Galician experiences. Visitors can enjoy local seafood cuisine, explore the town's quaint shops and cafes, and participate in water activities like sailing or kayaking in the estuary.Despite its growing tourism industry, Combarro maintains its tranquil atmosphere and strong connection to its maritime past. The village celebrates traditional festivals throughout the year, showcasing its rich cultural heritage and community spirit. Combarro serves as an ideal retreat for those looking to experience rural Spanish life while still being close to larger cities like Pontevedra and Vigo.",
+      "LocationImages": [
+        {
+          "filename":"1",
+          "path": "/src/assets/images/location-images/combarro/1.JPG"
+        },
+        {
+          "filename":"2",
+          "path": "/src/assets/images/location-images/combarro/2.JPG"
+        },
+        {
+          "filename":"3",
+          "path": "/src/assets/images/location-images/combarro/3.JPG"
+        }
+      ],
+      "thumbnail": {
+        "filename": "3",
+        "path": "/src/assets/images/location-images/combarro/3.JPG"
+    }
+    },
+    {
+      "id": 4,
+      "country": "Netherlands",
+      "city": "Amsterdam",
+      "arrivalDate": "2024-11-14",
+      "departureDate": "2024-11-14",
+      "coordinates": [
+        52.37,
+        4.89
+      ],
+      "description":"Amsterdam is a vibrant and eclectic city situated in the heart of the Netherlands. Known as the \" Venice of the North,\" it's characterized by its extensive network of canals, ornate bridges, and charming gabled houses. Founded in the 13th century as a small fishing village, Amsterdam grew into a major commercial center during the Dutch Golden Age, becoming a hub for trade, finance, and culture.The city is famous for its artistic heritage, housing some of the world's most renowned museums like the Rijksmuseum and Van Gogh Museum. Its tolerant attitude and liberal policies have made it a haven for artists, intellectuals, and free thinkers throughout history.Amsterdam's compact city center is easily explored on foot or by bicycle, offering visitors a chance to discover hidden gems like the Jordaan neighborhood and the Anne Frank House. The city's culinary scene is known for its cheese, chocolate, and beer, with many cozy cafes serving these local specialties.As the financial and business capital of the Netherlands, Amsterdam hosts numerous multinational corporations and startups. It's also a major transportation hub, with Schiphol Airport connecting the city to global destinations.From its flower markets to its nightlife, Amsterdam offers a unique blend of historical charm and modern vibrancy, attracting millions of visitors each year who come to experience its laid-back atmosphere and rich cultural landscape.",
+      "LocationImages": [
+        {
+          "filename":"1",
+          "path": "/src/assets/images/location-images/amsterdam/1.JPG"
+        },
+        {
+          "filename":"2",
+          "path": "/src/assets/images/location-images/amsterdam/2.JPG"
+        },
+        {
+          "filename":"3",
+          "path": "/src/assets/images/location-images/amsterdam/3.JPG"
+        }
+      ],
+      "thumbnail": {
+        "filename": "2",
+        "path": "/src/assets/images/location-images/amsterdam/2.JPG"
+    }
+    },
+    {
+        "id": 5,
+        "country": "Portugal",
+        "city": "Sintra",
+        "arrivalDate": "2024-11-15",
+        "departureDate": "2024-11-14",
+        "coordinates": [
+        38.79,
+        -9.38
+      ],
+        "description":"Sintra is a picturesque town nestled in the foothills of the Sintra Mountains, just west of Lisbon, Portugal. This enchanting destination has captivated visitors for centuries with its fairytale-like landscapes and architectural treasures. The town is set amidst lush forests and rugged coastline, creating a dramatic backdrop for its numerous palaces and castles.At the heart of Sintra lies the Pena Palace, a UNESCO World Heritage Site and former royal residence, known for its vibrant colors and eclectic mix of architectural styles. Other notable attractions include the Moorish Castle, Quinta da Regaleira with its mysterious underground tunnels, and the National Palace of Sintra, which showcases Manueline architecture.Sintra's natural beauty extends beyond its built heritage, with the Serra de Sintra Natural Park offering hiking trails, scenic views, and unique flora. The town's mild climate and stunning scenery have made it a popular retreat for artists and intellectuals throughout history, including Lord Byron and Hans Christian Andersen.Today, Sintra attracts millions of tourists each year who come to marvel at its palaces, explore its winding streets lined with shops and cafes, and experience the area's rich cultural and natural heritage. Despite its popularity, the town maintains a charming, laid-back atmosphere, making it an ideal day trip from Lisbon or a longer stay for those seeking to immerse themselves in Portuguese history and nature.",
+        "LocationImages": [
+        {
+          "filename":"1",
+          "path": "/src/assets/images/location-images/sintra/1.JPG"
+        },
+        {
+          "filename":"2",
+          "path": "/src/assets/images/location-images/sintra/2.JPG"
+        },
+        {
+          "filename":"3",
+          "path": "/src/assets/images/location-images/sintra/3.JPG"
+        }
+      ],
+      "thumbnail": {
+        "filename": "1",
+        "path": "/src/assets/images/location-images/sintra/1.JPG"
+    }
+      }
+  ]
