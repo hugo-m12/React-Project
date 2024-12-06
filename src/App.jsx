@@ -5,6 +5,7 @@ import LocationDetailView from "./views/LocationDetailView";
 import Footer from "./components/Footer";
 import HomeView from "./views/HomeView";
 import Error404View from "./views/error404View";
+import ContactView from "./views/ContactView";
 import { Route, Switch } from "wouter";
 import { register } from "swiper/element/bundle";
 import "swiper/css";
@@ -22,6 +23,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomeView} />
         <Route path="/About-me" component={AboutView} />
+        <Route path="/Contact" component={ContactView} />
         <Route path="/404" component={Error404View} />
         <Route path="/AddLocation" component={AddLocationView} />
         <Route path="/:locationName" component={LocationDetailView} />

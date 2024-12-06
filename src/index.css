@@ -50,11 +50,12 @@ body{
 
 .menu-links{
   text-decoration: none;
-  color: black;
+  color: #666666;
   transition: color 0.3s ease;
 }
 .menu-links:hover{
-  color: #ccc;
+  color: black;
+  text-decoration: underline;
 }
 
 .logo{
@@ -107,8 +108,19 @@ body{
   height: 40px;
 }
 
+.aboutme-section{
+  display: flex;
+}
+
+.self-portrait {
+  width: 50%;
+  height: 50%;
+}
+
 .aboutcontainer{
   padding: 50px;
+  width: 50%;
+  height: 50%;
 }
 
 .card-container{

@@ -8,7 +8,6 @@ function LocationsMap({ locations }) {
   LocationsMap.propTypes = {
     locations: PropTypes.object,
   };
-  console.log(typeof(locations));
   return (
     <div>
       {locations.coordinates && locations.coordinates.length > 0 ? (

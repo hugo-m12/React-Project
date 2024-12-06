@@ -45,7 +45,7 @@ function LocationsGlobe() {
       label: "Berlin",
     },
   ];
-
+  
   return (
     <Globe 
       backgroundColor="rgba(255,255,255,255)"
