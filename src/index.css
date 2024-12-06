@@ -212,7 +212,8 @@ body{
 
  .LoadingAnim-container{
   justify-content: center;
-  padding: 20px;
+  display: flex;
+  padding: 80px;
  }
 
  .capitalize-text{
