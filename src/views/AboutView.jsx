@@ -37,11 +37,8 @@ function AboutView() {
 
 const PortraitImage = ({ isLoaded }) => (
   <div className={`portrait-image-container ${isLoaded ? 'loaded' : ''}`}>
-    <img src="src/assets/images/portrait/IMG_7981.jpg" alt="Your Name" />
+    <img src="src/assets/images/portrait/IMG_7981.jpg" alt="Portrait" />
   </div>
 );
 
 export default AboutView;
-
-//<img src="src/assets/images/portrait/IMG_7981.jpg" alt="portrait here"></img>
-// inserir no background fotos minhas ?

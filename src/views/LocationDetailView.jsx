@@ -123,7 +123,7 @@ function LocationDetailView() {
         </div>
       </section>
       <div className="weather-section">
-        <h1 className="detail-text"> 5 day Forecast </h1>
+        <h1 className="text-5xl text-center font-black"> 5 day Forecast </h1>
         {forecastWeather?.list && forecastWeather.list.length > 0 ? (
           <div className="card-container">
             {forecastWeather.list.map((data) => (
@@ -135,7 +135,7 @@ function LocationDetailView() {
                       src={`https://openweathermap.org/img/wn/${details.icon}@2x.png`}
                       alt="weather-icon"
                     />
-                    <p className="capitalize-text"> {details.description}</p>
+                    <p className="description"> {details.description}</p>
                   </div>
                 ))}
                 <p> Temperature: {data.main.temp} °C</p>

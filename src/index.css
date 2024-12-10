@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .header-container{
   color: white;
   background-size: cover;
@@ -62,6 +65,7 @@ body{
   width: 100px;
   height: 100px;
   position: absolute;
+  cursor: pointer;
 }
 
 /* Previous logo css sheet
@@ -160,10 +164,6 @@ body{
   text-align: center;
 }
 
-.detail-text{
-  text-align: center;
-}
-
 .Location-Weather{
   display: flex;
   justify-content: center;
@@ -195,6 +195,11 @@ body{
 
  .weather-section{
   padding: 30px;
+ }
+
+ .Location-description{
+  padding: 20px;
+  text-wrap: wrap;
  }
  
  .card-button {
@@ -234,30 +239,7 @@ body{
  .text-body {
   color: rgb(134, 134, 134);
  }
-
- .errorPage{
-  text-align: center;
-  margin: 50px;
- }
-
- .error-img{
-  width: 250px;
-  height: 250px;
- }
-
- .homeButton{
-  background-color: #4a5154;
-  cursor: pointer;
-  color: white;
-  padding: 10px;
-  text-decoration: none;
-  transition: color 0.3s ease;
- }
-
-.homeButton:hover{
-  color: #ccc;
-}
-
+ 
  .margin{
   margin-bottom: 45px;
  }

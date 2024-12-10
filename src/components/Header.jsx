@@ -10,7 +10,7 @@ function Header(){
     <>
     <header>
         <div className="header-container">
-            <img className="logo" src="src/assets/images/logo/logofinal.png" alt="logo" /> 
+            <Link href="/" > <img className="logo" src="src/assets/images/logo/logofinal.png" alt="logo" /> </Link>
              <nav className="header-menu">  
                 <li> <FontAwesomeIcon color="black" icon={faHouse} /> <Link className="menu-links" href="/"> Home </Link> </li>  
                 <li> <FontAwesomeIcon color="black" icon={faLocationDot} /> <Link className="menu-links" href="/AddLocation"> Add a new location </Link> </li> 

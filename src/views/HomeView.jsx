@@ -44,7 +44,7 @@ function HomeView() {
                 </div>
         )}
       </section>
-      <h2 className="detail-text">Visited Locations</h2>
+      <h2 className="text-5xl text-center font-black">Visited Locations</h2>
       <section className="globe-section">
         <div>
           <LocationsGlobe />
