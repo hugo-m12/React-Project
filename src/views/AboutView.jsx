@@ -1,14 +1,24 @@
+import React, { useState, useEffect } from 'react';
+import './AboutMePage.css';
+
 function AboutView() {
+
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
     <>
       <h1 className="addlocaltitle">About me</h1>
       <div className="aboutme-section">
-
+      <PortraitImage isLoaded={isLoaded}/> 
       <div className="self-portrait">
-        <img alt="portrait here"></img>
       </div>
+
       <div className="aboutcontainer">
-        <h2>Hugo Moreira</h2>
+        <h1>Hugo Moreira</h1>
         <p>
           I'm a junior Fullstack developer based in porto, Portugal that also has a passion for photography and travel.
           Movies and games and other types of media are also part of my main hobbies, cinematography in films beeing one of the the main influences for some of my work in photography. 
@@ -25,6 +35,13 @@ function AboutView() {
   );
 }
 
+const PortraitImage = ({ isLoaded }) => (
+  <div className={`portrait-image-container ${isLoaded ? 'loaded' : ''}`}>
+    <img src="src/assets/images/portrait/IMG_7981.jpg" alt="Your Name" />
+  </div>
+);
+
 export default AboutView;
 
+//<img src="src/assets/images/portrait/IMG_7981.jpg" alt="portrait here"></img>
 // inserir no background fotos minhas ?

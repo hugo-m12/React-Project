@@ -110,11 +110,7 @@ body{
 
 .aboutme-section{
   display: flex;
-}
-
-.self-portrait {
-  width: 50%;
-  height: 50%;
+  margin-bottom: 200px;
 }
 
 .aboutcontainer{
