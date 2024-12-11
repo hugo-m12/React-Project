@@ -12,10 +12,10 @@ function Header(){
         <div className="text-white bg-cover bg-center">
             <Link href="/" > <img className="logo" src="src/assets/images/logo/logofinal.png" alt="logo" /> </Link> 
              <nav className="flex justify-end gap-16 p-7 list-none">  
-                <li> <FontAwesomeIcon color="black" icon={faHouse} /> <Link className="text-gray-500 no-underline transition-colors duration-300 hover:text-black hover:underline" href="/"> Home </Link> </li>  
-                <li> <FontAwesomeIcon color="black" icon={faLocationDot} /> <Link className="text-gray-500 no-underline transition-colors duration-300 hover:text-black hover:underline" href="/AddLocation"> Add a new location </Link> </li> 
-                <li> <FontAwesomeIcon color="black" icon={faUser} /> <Link className="text-gray-500 no-underline transition-colors duration-300 hover:text-black hover:underline" href="/About-me"> About </Link> </li> 
-                <li> <FontAwesomeIcon color="black" icon={faMessage} /> <Link className="text-gray-500 no-underline transition-colors duration-300 hover:text-black hover:underline" href="/Contact"> Contact </Link> </li> 
+                <li> <FontAwesomeIcon color="black" icon={faHouse} /> <Link className="text-gray-400 no-underline transition-colors duration-300 hover:text-black hover:underline" href="/"> Home </Link> </li>  
+                <li> <FontAwesomeIcon color="black" icon={faLocationDot} /> <Link className="text-gray-400 no-underline transition-colors duration-300 hover:text-black hover:underline" href="/AddLocation"> Add a new location </Link> </li> 
+                <li> <FontAwesomeIcon color="black" icon={faUser} /> <Link className="text-gray-400 no-underline transition-colors duration-300 hover:text-black hover:underline" href="/About-me"> About </Link> </li> 
+                <li> <FontAwesomeIcon color="black" icon={faMessage} /> <Link className="text-gray-400 no-underline transition-colors duration-300 hover:text-black hover:underline" href="/Contact"> Contact </Link> </li> 
              </nav>
         </div>
     </header>

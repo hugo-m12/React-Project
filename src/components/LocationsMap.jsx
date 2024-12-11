@@ -25,7 +25,7 @@ function LocationsMap({ locations }) {
           </>
         </MapContainer>
       ) : (
-        <div className="LoadingAnim-container">
+        <div className="flex content-center p-20">
           <LoadingAnim />
         </div>
       )}

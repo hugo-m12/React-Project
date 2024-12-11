@@ -25,8 +25,8 @@ function HomeView() {
       </article>
       <section>
         {locations && locations.length > 0 ? (
-          <div className="card-container">
-            <div className="cards">
+          <div className="flex justify-center gap-6 m-12">
+            <div className="flex gap-12">
               {locations.map((value) => (
                 <Link
                   className="no-underline text-inherit"
@@ -39,7 +39,7 @@ function HomeView() {
             </div>
           </div>
         ) : (
-          <div className="LoadingAnim-container">
+          <div className="flex content-center p-20">
                   <LoadingAnim />
                 </div>
         )}
