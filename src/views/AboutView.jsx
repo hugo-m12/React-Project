@@ -11,7 +11,7 @@ function AboutView() {
 
   return (
     <>
-      <h1 className="text-5xl text-center mb-3">About me</h1>
+      <h1 className="text-5xl text-center mb-5">About me</h1>
       <div className="flex mb-52">
       <PortraitImage isLoaded={isLoaded}/> 
       <div className="self-portrait">

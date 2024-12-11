@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 .locationcard {
-  width: 220px;
-  height: 280px;
+  width: 250px;
+  height: 300px;
   text-align: center;
   align-items: center;
   border-radius: 20px;
@@ -14,7 +14,6 @@
   border: 2px solid #c3c6ce;
   transition: 0.5s ease-out;
   overflow: visible;
-  padding: 25px;
 }
 
 .card-details > img {

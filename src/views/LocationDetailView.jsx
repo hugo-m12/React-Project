@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade } from "swiper/modules";
-import { useParams } from "wouter";
+import { useParams, useLocation } from "wouter";
 import { useEffect, useState } from "react";
 import LocationsMap from "../components/LocationsMap";
 import locationsService from "../services/locationsService";
@@ -11,6 +11,7 @@ function LocationDetailView() {
   const [city, setCity] = useState([]);
   const [cityWeather, setCityWeather] = useState([]);
   const [forecastWeather, setForecastWeather] = useState([]);
+  const [, setLocation] = useLocation();
 
   useEffect(() => {
     const fetchCityData = async () => {
@@ -18,9 +19,8 @@ function LocationDetailView() {
       const foundCity = data.find(
         (p) => p.city.toLowerCase() === params.locationName.toLowerCase()
       );
-      if (foundCity === undefined) {
-        // return <Redirect to="/" />;
-        window.location = "/404";
+      if (!foundCity) {
+        setLocation("/404");
       }
       setCity(foundCity);
     };
@@ -97,8 +97,8 @@ function LocationDetailView() {
         <div className="flex justify-center">
           {cityWeather?.weather && cityWeather.weather.length > 0 ? (
             <div className="weather-card">
-              <h1> Current weather </h1>
-              <h2> {city.city} </h2>
+              <h1 className="text-3xl font-bold mb-3"> Current weather </h1>
+              <h2 className="text-2xl font-bold mb-4"> {city.city} </h2>
               {cityWeather.weather.map((data) => (
                 <div className="justify-center" key={data.id}>
                 <h3>{data.main}</h3>
