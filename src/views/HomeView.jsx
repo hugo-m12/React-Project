@@ -29,7 +29,7 @@ function HomeView() {
             <div className="cards">
               {locations.map((value) => (
                 <Link
-                  className="icon-social"
+                  className="no-underline text-inherit"
                   key={value.id}
                   href={`/${value.city}`}
                 >
@@ -44,12 +44,12 @@ function HomeView() {
                 </div>
         )}
       </section>
-      <h2 className="text-5xl text-center font-black">Visited Locations</h2>
+      {/*<h2 className="text-5xl text-center font-black">Visited Locations</h2>
       <section className="globe-section">
         <div>
           <LocationsGlobe />
         </div>
-      </section>
+      </section>*/}
     </>
   );
 }
