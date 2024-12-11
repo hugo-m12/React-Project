@@ -50,37 +50,6 @@ body{
   height: 90%;
 }
 
-.addlocaltitle{
-  text-align: center;
-}
-
-.NewLocationForm{
-  display: grid;
-  padding: 50px;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.NewLocationForm > input{
-  border: 1px solid rgba(105, 105, 105, 0.397);
-  border-radius: 5px;
-  width: 352px;
-  height: 40px;
-}
-
-.aboutme-section{
-  display: flex;
-  margin-bottom: 200px;
-}
-
-.aboutcontainer{
-  padding: 50px;
-  width: 50%;
-  height: 50%;
-}
-
 .card-container{
   display: flex;
   justify-content: center;
@@ -140,11 +109,7 @@ body{
   padding: 20px;
  }
 
- .LoadingAnim-container{
-  justify-content: center;
-  display: flex;
-  padding: 80px;
- }
+ 
 
  .capitalize-text{
   text-transform: capitalize;
@@ -281,8 +246,8 @@ body{
 
 /* file upload*/ 
 .custom-file-upload {
-  height: 115px;
-  width: 307px;
+  height: 170px;
+  width: 351px;
   display: flex;
   flex-direction: column;
   align-items: space-between;
@@ -326,6 +291,11 @@ body{
 
 
 /* Loading Anim put this in a separate css later*/ 
+.LoadingAnim-container{
+  justify-content: center;
+  display: flex;
+  padding: 80px;
+ }
 .spinner {
   position: absolute;
   width: 9px;

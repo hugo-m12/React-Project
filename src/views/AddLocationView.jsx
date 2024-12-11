@@ -25,34 +25,38 @@ function AddLocationView() {
 
   return (
     <>
-      <h1 className="addlocaltitle"> Suggest me a new location to Visit! </h1>
+      <h1 className="text-5xl text-center mb-3"> Suggest me a new location to Visit! </h1>
 
       <form
         onSubmit={(event) => {
           event.preventDefault();
         }}
       >
-        <div className="NewLocationForm">
+        <div className="grid p-16 items-center text-center justify-center gap-5">
           <input required={true}
+            className="border border-gray-400/60 rounded-sm w-[352px] h-10"
             defaultValue={country}
             onChange={(e) => setCountry(e.target.value)}
             placeholder="Country"
           ></input>
           <input required={true}
+          className="border border-gray-400/60 rounded-sm w-[352px] h-10"
             defaultValue={city}
             onChange={(e) => setCity(e.target.value)}
             placeholder="City"
           ></input>
-          <div className="form-dates-grid">
+          <div className="grid grid-cols-2 gap-4">
             <p>Arrival Date</p>
             <p>Departure Date</p>
             <input
+              className="border border-gray-400/60 rounded-sm w-[168px] h-10"
               required={true}
               defaultValue={arrivalDate}
               onChange={(e) => setArrivalDate(e.target.value)}
               type="date"
             ></input>
             <input
+              className="border border-gray-400/60 rounded-sm w-[168px] h-10"
               required={true}
               defaultValue={departureDate}
               onChange={(e) => setDepartureDate(e.target.value)}
@@ -61,6 +65,7 @@ function AddLocationView() {
           </div>
           <textarea
             defaultValue={description}
+            className="border border-gray-400/60 rounded-sm w-[352px]"
             onChange={(e) => setdescription(e.target.value)}
             rows={5}
             placeholder="Location description"
@@ -94,5 +99,3 @@ function AddLocationView() {
 }
 
 export default AddLocationView;
-
-/*<input type="file" placeholder="Select Your thumbnail image"></input>   */

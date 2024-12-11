@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import LocationDetailView from "./views/LocationDetailView";
 import Footer from "./components/Footer";
 import HomeView from "./views/HomeView";
-import Error404View from "./views/error404View";
+import Error404View from "./views/Error404View";
 import ContactView from "./views/ContactView";
 import { Route, Switch } from "wouter";
 import { register } from "swiper/element/bundle";
