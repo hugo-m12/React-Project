@@ -10,6 +10,7 @@ function AboutView() {
 
   return (
     <>
+    <div> 
       <h1 className="text-5xl text-center mt-8 mb-5">About me</h1>
       <div className="flex mb-[111px]">
         <PortraitImage isLoaded={isLoaded} />
@@ -37,6 +38,7 @@ function AboutView() {
           </p>
         </div>
       </div>
+    </div>
     </>
   );
 }
@@ -48,3 +50,5 @@ const PortraitImage = ({ isLoaded }) => (
 );
 
 export default AboutView;
+
+//div created for mediaqueries later
