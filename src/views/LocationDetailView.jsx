@@ -51,7 +51,7 @@ function LocationDetailView() {
   return (
     <>
       <section>
-        <div className="text-2xl text-center font-bold">
+        <div className="text-3xl text-center font-bold">
           <h1>{city.country}</h1>
           <h1>{city.city}</h1>
           <p>{city.arrivalDate}</p>
@@ -85,7 +85,7 @@ function LocationDetailView() {
         </div>
       </section>
       <article>
-        <div className="p-5 text-wrap">
+        <div className="p-5 text-wrap leading-snug text-lg">
           <p>{city.description}</p>
         </div>
       </article>
@@ -95,7 +95,7 @@ function LocationDetailView() {
         </div>
       </section>
       <section>
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-5">
           {cityWeather?.weather && cityWeather.weather.length > 0 ? (
             <div className="weather-card">
               <h1 className="text-3xl font-bold mb-3"> Current weather </h1>
