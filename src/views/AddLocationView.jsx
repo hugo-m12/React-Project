@@ -25,7 +25,9 @@ function AddLocationView() {
 
   return (
     <>
-      <h1 className="text-5xl text-center mb-3"> Suggest me a new location to Visit! </h1>
+      <h1 className="text-5xl text-center mb-3">
+        Suggest me a new location to Visit!
+      </h1>
 
       <form
         onSubmit={(event) => {
@@ -33,14 +35,16 @@ function AddLocationView() {
         }}
       >
         <div className="grid p-16 items-center text-center justify-center gap-5">
-          <input required={true}
+          <input
+            required={true}
             className="border border-gray-400/60 rounded-sm w-[352px] h-10"
             defaultValue={country}
             onChange={(e) => setCountry(e.target.value)}
             placeholder="Country"
           ></input>
-          <input required={true}
-          className="border border-gray-400/60 rounded-sm w-[352px] h-10"
+          <input
+            required={true}
+            className="border border-gray-400/60 rounded-sm w-[352px] h-10"
             defaultValue={city}
             onChange={(e) => setCity(e.target.value)}
             placeholder="City"

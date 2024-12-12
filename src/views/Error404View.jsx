@@ -11,7 +11,10 @@ function Error404View() {
           />
           <p className="mb-4">Uh-oh!</p>
           <p className="mb-8">We can't find that page.</p>
-          <a href="/" className=" bg-gray-700 cursor-pointer text-white px-4 py-2 transition-colors rounded duration-300 hover:text-gray-300 ">
+          <a
+            href="/"
+            className=" bg-gray-700 cursor-pointer text-white px-4 py-2 transition-colors rounded duration-300 hover:text-gray-300 "
+          >
             Go Back Home
           </a>
         </div>

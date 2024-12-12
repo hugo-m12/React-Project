@@ -17,11 +17,11 @@ function ContactView(){
           <input className="border border-gray-400/60 rounded-sm w-[352px] h-10"
             placeholder="Email"
           ></input>
-          <textarea className="border border-gray-400/60 rounded-sm w-[352px]"
+          <textarea className="border border-gray-400/60 rounded-sm w-[352px] mb-4"
             rows={7}
             placeholder="Message"
           ></textarea>
-          <button className="fancy" href="#">
+          <button className="fancy mb-[26px]" href="#">
             <span className="top-key"></span>
             <span className="text">Send</span>
             <span className="bottom-key-1"></span>

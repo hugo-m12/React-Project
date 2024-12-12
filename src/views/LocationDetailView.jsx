@@ -47,13 +47,14 @@ function LocationDetailView() {
     };
     fetchForecastData();
   }, []);
+
   return (
     <>
       <section>
         <div className="text-2xl text-center font-bold">
-        <h1>{city.country}</h1>
-        <h1>{city.city}</h1>
-        <p>{city.arrivalDate}</p>
+          <h1>{city.country}</h1>
+          <h1>{city.city}</h1>
+          <p>{city.arrivalDate}</p>
         </div>
         <div className="p-5">
           <Swiper //ty to do this component in the components folder
@@ -101,16 +102,16 @@ function LocationDetailView() {
               <h2 className="text-2xl font-bold mb-4"> {city.city} </h2>
               {cityWeather.weather.map((data) => (
                 <div className="justify-center" key={data.id}>
-                <h3>{data.main}</h3>
-                <div className="flex justify-center">
-                  <img
-                    src={`https://openweathermap.org/img/wn/${data.icon}@2x.png`}
-                    alt="Weather icon"
-                    className="w-auto h-auto max-w-xs"
-                  />
+                  <h3>{data.main}</h3>
+                  <div className="flex justify-center">
+                    <img
+                      src={`https://openweathermap.org/img/wn/${data.icon}@2x.png`}
+                      alt="Weather icon"
+                      className="w-auto h-auto max-w-xs"
+                    />
+                  </div>
+                  <p className="capitalize">{data.description}</p>
                 </div>
-                <p className="capitalize">{data.description}</p>
-              </div>
               ))}
               <p> Current Temperature : {cityWeather.main.temp} °C </p>
               <p> Min Temperature : {cityWeather.main.temp_min} °C </p>
@@ -120,7 +121,7 @@ function LocationDetailView() {
             <p>No weather data available.</p>
           ) : (
             <div className="flex content-center p-20">
-                  <LoadingAnim />
+              <LoadingAnim />
             </div>
           )}
         </div>
@@ -135,12 +136,12 @@ function LocationDetailView() {
                   <div className="justify-center" key={details.id}>
                     <h3> {details.main}</h3>
                     <div className="flex justify-center">
-                    <img
-                      src={`https://openweathermap.org/img/wn/${details.icon}@2x.png`}
-                      alt="weather-icon"
-                      className="w-auto h-auto max-w-xs"
+                      <img
+                        src={`https://openweathermap.org/img/wn/${details.icon}@2x.png`}
+                        alt="weather-icon"
+                        className="w-auto h-auto max-w-xs"
                       />
-                  </div>
+                    </div>
                     <p className="capitalize"> {details.description}</p>
                   </div>
                 ))}
@@ -152,7 +153,7 @@ function LocationDetailView() {
           <p>No weather data available.</p>
         ) : (
           <div className="flex content-center p-20">
-                  <LoadingAnim />
+            <LoadingAnim />
           </div>
         )}
       </div>
