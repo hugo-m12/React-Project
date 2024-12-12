@@ -94,31 +94,43 @@ function LocationDetailView() {
           <LocationsMap locations={city} className="p-5" />
         </div>
       </section>
-      <section>
-        <div className="flex justify-center mb-5">
+      <section className="px-4">
+        <div className="mb-5 px-4">
           {cityWeather?.weather && cityWeather.weather.length > 0 ? (
-            <div className="weather-card">
-              <h1 className="text-3xl font-bold mb-3"> Current weather </h1>
-              <h2 className="text-2xl font-bold mb-4"> {city.city} </h2>
-              {cityWeather.weather.map((data) => (
-                <div className="justify-center" key={data.id}>
-                  <h3>{data.main}</h3>
-                  <div className="flex justify-center">
-                    <img
-                      src={`https://openweathermap.org/img/wn/${data.icon}@2x.png`}
-                      alt="Weather icon"
-                      className="w-auto h-auto max-w-xs"
-                    />
+            <div className="bg-gradient-to-br from-blue-100 to-white rounded-lg shadow-md md:p-8 lg:p-10 overflow-hidden mx-auto max-w-sm">
+              <div className="p-6 text-center">
+                <h1 className="text-xl font-bold mb-3 md:text-3xl">
+                  Current weather
+                </h1>
+                <h2 className="text-lg font-bold mb-4 md:text-2xl">
+                  {city.city}
+                </h2>
+                {cityWeather.weather.map((data) => (
+                  <div key={data.id} className="mb-4">
+                    <h3>{data.main}</h3>
+                    <div className="flex justify-center mt-2">
+                      <img
+                        src={`https://openweathermap.org/img/wn/${data.icon}@2x.png`}
+                        alt="Weather icon"
+                        className="w-16 h-16 mx-auto object-contain"
+                      />
+                    </div>
+                    <p className="capitalize text-sm md:text-base">
+                      {data.description}
+                    </p>
                   </div>
-                  <p className="capitalize">{data.description}</p>
-                </div>
-              ))}
-              <p> Current Temperature : {cityWeather.main.temp} °C </p>
-              <p> Min Temperature : {cityWeather.main.temp_min} °C </p>
-              <p> Max Temperature : {cityWeather.main.temp_max} °C </p>
+                ))}
+                <p className="mt-4">
+                  Current Temperature: {cityWeather.main.temp} °C
+                </p>
+                <p>Min Temperature: {cityWeather.main.temp_min} °C</p>
+                <p>Max Temperature: {cityWeather.main.temp_max} °C</p>
+              </div>
             </div>
           ) : cityWeather?.weather ? (
-            <p>No weather data available.</p>
+            <p className="text-center text-gray-500">
+              No weather data available.
+            </p>
           ) : (
             <div className="flex content-center p-20">
               <LoadingAnim />
@@ -126,6 +138,7 @@ function LocationDetailView() {
           )}
         </div>
       </section>
+
       <div className="p-7">
         <h1 className="text-5xl text-center font-black"> 5 day Forecast </h1>
         {forecastWeather?.list && forecastWeather.list.length > 0 ? (

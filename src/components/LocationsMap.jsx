@@ -11,7 +11,7 @@ function LocationsMap({ locations }) {
   return (
     <div>
       {locations.coordinates && locations.coordinates.length > 0 ? (
-        <MapContainer
+        <MapContainer className="h-[300px]"
           center={locations.coordinates}
           zoom={12}
           scrollWheelZoom={false}
