@@ -49,7 +49,7 @@ function HomeView() {
         Visited Locations
       </h2>
       <section className="globe-section">
-        <div>
+        <div className="globe-container">
           <LocationsGlobe />
         </div>
       </section>

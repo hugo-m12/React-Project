@@ -76,7 +76,7 @@ function LocationDetailView() {
               ))
             ) : (
               <SwiperSlide>
-                <div className="flex content-center p-20">
+                <div className="flex items-center justify-center p-20">
                   <LoadingAnim />
                 </div>
               </SwiperSlide>
@@ -87,7 +87,7 @@ function LocationDetailView() {
 
       <article>
         <div className="p-5 text-wrap leading-snug text-lg">
-          <p>{city.description}</p>
+          <p className="whitespace-pre-wrap text-center">{city.description}</p>
         </div>
       </article>
       <section>
@@ -133,7 +133,7 @@ function LocationDetailView() {
               No weather data available.
             </p>
           ) : (
-            <div className="flex content-center p-20">
+            <div className="flex items-center justify-center p-20">
               <LoadingAnim />
             </div>
           )}
@@ -166,7 +166,7 @@ function LocationDetailView() {
         ) : forecastWeather?.weather ? (
           <p>No weather data available.</p>
         ) : (
-          <div className="flex content-center p-20">
+          <div className="flex items-center justify-center p-20">
             <LoadingAnim />
           </div>
         )}
