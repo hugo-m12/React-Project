@@ -23,10 +23,10 @@ function HomeView() {
           <img src="src/assets/images/banner test.jpg" alt="main-banner" />
         </div>
       </article>
-      <section>
+      <section className="flex justify-center">
         {locations && locations.length > 0 ? (
-          <div className="flex justify-center gap-6 m-12">
-            <div className="flex gap-12">
+          <div className="flex justify-center gap-6 m-12 flex-wrap sm:flex-wrap p-50 md:flex-wrap lg:flex-nowrap">
+            <div className="flex flex-wrap gap-12">
               {locations.map((value) => (
                 <Link
                   className="no-underline text-inherit"
@@ -39,12 +39,15 @@ function HomeView() {
             </div>
           </div>
         ) : (
-          <div className="flex content-center p-20">
-                  <LoadingAnim />
-                </div>
+          <div className="flex items-center justify-center p-20">
+            <LoadingAnim />
+          </div>
         )}
       </section>
-      <h2 className="text-5xl text-center font-black mt-40">Visited Locations</h2>
+
+      <h2 className="text-5xl text-center font-black mt-40">
+        Visited Locations
+      </h2>
       <section className="globe-section">
         <div>
           <LocationsGlobe />
@@ -55,4 +58,3 @@ function HomeView() {
 }
 
 export default HomeView;
-

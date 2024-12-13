@@ -35,4 +35,6 @@ function App() {
 
 export default App;
 
-//TODO:  // parallax for main banner // ajust main banner and header logo fix swipper bug when resizing and in porto images // fix prop warning
+//TODO:  // parallax for main banner // ajust main banner and header logo fix swipper bug when resizing and in porto images~
+//  // fix prop warning fix home and about me page in mobile //fix resolution on swiper images 
+

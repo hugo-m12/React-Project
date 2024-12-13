@@ -50,14 +50,14 @@ function LocationDetailView() {
 
   return (
     <>
-      <section>
-        <div className="text-3xl text-center font-bold">
-          <h1>{city.country}</h1>
-          <h1>{city.city}</h1>
-          <p>{city.arrivalDate}</p>
+      <section className="mt-[20px]">
+        <div className="text-3xl text-center font-bold mb-8 sm:mb-16">
+          <h1 className="text-xl sm:text-3xl">{city.country}</h1>
+          <h1 className="text-2xl sm:text-4xl">{city.city}</h1>
+          <p className="text-lg sm:text-xl">{city.arrivalDate}</p>
         </div>
         <div className="p-5">
-          <Swiper //ty to do this component in the components folder
+          <Swiper
             modules={[EffectFade]}
             effect="fade"
             slidesPerView={1}
@@ -84,6 +84,7 @@ function LocationDetailView() {
           </Swiper>
         </div>
       </section>
+
       <article>
         <div className="p-5 text-wrap leading-snug text-lg">
           <p>{city.description}</p>
@@ -112,7 +113,7 @@ function LocationDetailView() {
                       <img
                         src={`https://openweathermap.org/img/wn/${data.icon}@2x.png`}
                         alt="Weather icon"
-                        className="w-16 h-16 mx-auto object-contain"
+                        className="w-auto h-auto max-w-xs bg-white"
                       />
                     </div>
                     <p className="capitalize text-sm md:text-base">
@@ -142,7 +143,7 @@ function LocationDetailView() {
       <div className="p-7">
         <h1 className="text-5xl text-center font-black"> 5 day Forecast </h1>
         {forecastWeather?.list && forecastWeather.list.length > 0 ? (
-          <div className="flex justify-center gap-6 m-12">
+          <div className="flex justify-center gap-6 m-12 flex-wrap sm:flex-wrap md:flex-wrap lg:flex-nowrap xl:flex-nowrap">
             {forecastWeather.list.map((data) => (
               <div className="text-center" key={data.dt}>
                 {data.weather.map((details) => (
