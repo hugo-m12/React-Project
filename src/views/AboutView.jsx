@@ -53,5 +53,3 @@ const PortraitImage = ({ isLoaded }) => (
 );
 
 export default AboutView;
-
-//div created for mediaqueries later
