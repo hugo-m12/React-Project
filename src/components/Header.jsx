@@ -25,7 +25,6 @@ function Header() {
             />
           </Link>
 
-          {/* Desktop navigation */}
           <nav className="hidden md:flex justify-end gap-16 p-7 list-none ">
             <li>
               <FontAwesomeIcon color="black" icon={faHouse} />
@@ -65,7 +64,6 @@ function Header() {
             </li>
           </nav>
 
-          {/* Mobile navigation */}
           <div className="md:hidden flex justify-end items-center p-4 absolute top-0 right-0 z-50 transition-all duration-300 ease-in-out">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -83,7 +81,6 @@ function Header() {
             </button>
           </div>
 
-          {/* Mobile menu */}
           {isMenuOpen && (
             <div className="md:hidden fixed inset-x-4 top-0 bottom-0 h-[250px] w-[570px] flex justify-center bg-white shadow-lg z-50 transform translate-y-[40%] transition-transform duration-300 ease-out">
               <Link href="/">

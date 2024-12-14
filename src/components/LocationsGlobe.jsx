@@ -47,7 +47,7 @@ function LocationsGlobe() {
   ];
   
   return (
-    <Globe 
+    <Globe
       backgroundColor="rgba(255,255,255,255)"
       labelText={"label"}
       labelSize={1.6}
