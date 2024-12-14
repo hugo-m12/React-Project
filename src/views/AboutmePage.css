@@ -1,22 +1,25 @@
 
-  .portrait-image-container {
-    width: 30%;
-    height: 50%;
-    justify-content: end;
-    display: flex;
-    overflow: hidden;
-    margin-right: 40px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .portrait-image-container img {
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
-    transform: scale(1);
-    transition: all 0.8s ease-in-out;
-  }
+.portrait-image-container {
+  width: 100%; 
+  height: auto; 
+  justify-content: center; 
+  align-items: center; 
+  display: flex;
+  overflow: visible; 
+  margin-right: 40px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.portrait-image-container img {
+  width: 600px; 
+  height: 600px; 
+  object-fit: contain; 
+  max-width: 100%; 
+  max-height: 100vh; 
+  transform: scale(1);
+  transition: all 0.8s ease-in-out;
+}
   
   .portrait-image-container.loaded {
     opacity: 1;
