@@ -29,14 +29,6 @@ body{
   position: absolute;
   cursor: pointer;
 }
-
-/* Previous logo css sheet
-  width: 250px;
-  height: 250px;
-  padding: 10px;
-  margin-left: 40px;
-  margin-top: 40px; */
-
 .Main-banner {
   display: flex;
   justify-content: center;

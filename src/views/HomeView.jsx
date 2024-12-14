@@ -24,28 +24,28 @@ function HomeView() {
         </div>
       </article>
       <section className="flex justify-center">
-        {locations && locations.length > 0 ? (
-          <div className="flex justify-center gap-6 m-12 flex-wrap sm:flex-wrap md:flex-wrap lg:flex-nowrap">
-            <div className="flex flex-wrap gap-12">
-              {locations.map((value) => (
-                <Link
-                  className="no-underline text-inherit"
-                  key={value.id}
-                  href={`/${value.city}`}
-                >
-                  <LocationCard locations={value} />
-                </Link>
-              ))}
-            </div>
-          </div>
-        ) : (
-          <div className="flex items-center justify-center p-20">
-            <LoadingAnim />
-          </div>
-        )}
-      </section>
+  {locations && locations.length > 0 ? (
+    <div className="flex flex-col gap-6 m-12 sm:m-8 md:m-12 lg:m-16 xl:m-24">
+      <div className="flex flex-wrap justify-center gap-12">
+        {locations.map((value) => (
+          <Link
+            className="no-underline text-inherit"
+            key={value.id}
+            href={`/${value.city}`}
+          >
+            <LocationCard locations={value} />
+          </Link>
+        ))}
+      </div>
+    </div>
+  ) : (
+    <div className="flex items-center justify-center p-20">
+      <LoadingAnim />
+    </div>
+  )}
+</section>
 
-      <h2 className="text-5xl text-center font-black mt-28">
+      <h2 className="text-5xl text-center font-black mt-10">
         Visited Locations
       </h2>
       <section className="globe-section">

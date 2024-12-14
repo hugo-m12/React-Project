@@ -21,12 +21,6 @@ function LocationsGlobe() {
       label: "Combarro",
     },
     {
-      lat: 42.43,
-      lng: -8.70,
-      color: "blue",
-      label: "Combarro",
-    },
-    {
       lat: 52.37,
       lng: 4.89,
       color: "red",
@@ -43,6 +37,12 @@ function LocationsGlobe() {
       lng: 13.33,
       color: "green",
       label: "Berlin",
+    },
+    {
+      lat: 40.41,
+      lng: -3.70,
+      color: "purple",
+      label: "Madrid",
     },
   ];
   
