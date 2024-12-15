@@ -50,7 +50,7 @@ function LocationDetailView() {
 
   return (
     <>
-      <section className="mt-[20px]">
+      <section className="mt-[30px]">
         <div className="text-3xl text-center font-bold mb-8 sm:mb-16">
           <h1 className="text-xl sm:text-3xl">{city.country}</h1>
           <h1 className="text-2xl sm:text-4xl">{city.city}</h1>

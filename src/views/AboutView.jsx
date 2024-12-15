@@ -11,7 +11,7 @@ function AboutView() {
   return (
     <>
     <div>
-  <h1 className="text-5xl text-center mt-8 mb-5">About me</h1>
+  <h1 className="text-5xl text-center mt-10 mb-5">About me</h1>
   <div className="flex flex-col-reverse lg:flex justify-center md:flex-row items-start md:items-center gap-6 md:gap-12 mb-[111px] md:w-[1/2] sm:w-[1/2]">
     <div className="md:p-12 w-full md:w-1/2 order-2 md:order-1 p-7">
       <h1 className="text-3xl mb-5">Hugo Moreira</h1>

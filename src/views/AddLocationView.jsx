@@ -25,7 +25,7 @@ function AddLocationView() {
 
   return (
     <>
-      <h1 className="text-5xl text-center mb-3">
+      <h1 className="text-5xl text-center mt-10 mb-3">
         Suggest me a new location to Visit!
       </h1>
 
