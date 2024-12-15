@@ -64,10 +64,10 @@ function Header() {
             </li>
           </nav>
 
-          <div className="md:hidden flex justify-end items-center p-4 absolute top-0 right-0 z-50 transition-all duration-300 ease-in-out">
+          <div className="md:hidden flex items-center pr-4 absolute top-0 right-0 z-50 transition-all duration-300 ease-in-out">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`transition-all duration-300 ease-in-out ${
+              className={`p-2 transition-all duration-300 ease-in-out ${
                 isMenuOpen
                   ? "opacity-80 scale-105 transform-gpu"
                   : "opacity-100 scale-100"
@@ -80,55 +80,78 @@ function Header() {
               />
             </button>
           </div>
-
-          {isMenuOpen && (
-            <div className="md:hidden fixed inset-x-4 top-0 bottom-0 h-[250px] w-[570px] flex justify-center bg-white shadow-lg z-50 transform translate-y-[40%] transition-transform duration-300 ease-out">
-              <ul className="flex flex-col gap-6 p-6 text-black text-lg">
-                <li>
-                  <FontAwesomeIcon icon={faHouse} size="lg" />
-                  <Link
-                    className="text-gray-600 no-underline transition-colors duration-300 hover:text-black hover:underline ml-2"
-                    onClick={() => setIsMenuOpen(false)}
-                    href="/"
+          
+          {isMenuOpen && ( // ajust this in mobile later
+            <div 
+              className={`md:hidden fixed inset-0 bg-black bg-opacity-90 backdrop-blur-sm flex flex-col items-center justify-center p-4 transition-all duration-300 ease-in-out`}
+              style={{ zIndex: isMenuOpen ? '50' : '-1' }}
+            >
+              <div 
+                style={{
+                  position: 'absolute',
+                  top: '45%',
+                  left: '47%',
+                  transform: 'translate(-70%, -70%)',
+                  width: '100vw',
+                  maxWidth: '400px',
+                  maxHeight: '90vh',
+                }}
+              >
+                <div className="bg-white rounded-lg shadow-xl transform-gpu transition-all duration-300 ease-in-out">
+                  <button 
+                    onClick={() => setIsMenuOpen(false)} 
+                    className="absolute top-4 right-4 text-gray-500 hover:text-gray-900"
                   >
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <FontAwesomeIcon
-                    color="black"
-                    icon={faLocationDot}
-                    size="lg"
-                  />
-                  <Link
-                    className="text-gray-600 no-underline transition-colors duration-300 hover:text-black hover:underline ml-2"
-                    onClick={() => setIsMenuOpen(false)}
-                    href="/AddLocation"
-                  >
-                    Add a new location
-                  </Link>
-                </li>
-                <li>
-                  <FontAwesomeIcon color="black" icon={faUser} size="lg" />
-                  <Link
-                    className="text-gray-600 no-underline transition-colors duration-300 hover:text-black hover:underline ml-2"
-                    onClick={() => setIsMenuOpen(false)}
-                    href="/About-me"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <FontAwesomeIcon color="black" icon={faMessage} size="lg" />
-                  <Link
-                    className="text-gray-600 no-underline transition-colors duration-300 hover:text-black hover:underline ml-2"
-                    onClick={() => setIsMenuOpen(false)}
-                    href="/Contact"
-                  >
-                    Contact
-                  </Link>
-                </li>
-              </ul>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                  <nav>
+                    <ul className="flex flex-col gap-8 p-8 text-black text-lg text-center">
+                      <li>
+                        <FontAwesomeIcon icon={faHouse} size="lg" />
+                        <Link
+                          className="text-gray-600 no-underline transition-colors duration-300 hover:text-black hover:underline ml-2"
+                          onClick={() => setIsMenuOpen(false)}
+                          href="/"
+                        >
+                          Home
+                        </Link>
+                      </li>
+                      <li>
+                        <FontAwesomeIcon color="black" icon={faLocationDot} size="lg" />
+                        <Link
+                          className="text-gray-600 no-underline transition-colors duration-300 hover:text-black hover:underline ml-2"
+                          onClick={() => setIsMenuOpen(false)}
+                          href="/AddLocation"
+                        >
+                          Add a new location
+                        </Link>
+                      </li>
+                      <li>
+                        <FontAwesomeIcon color="black" icon={faUser} size="lg" />
+                        <Link
+                          className="text-gray-600 no-underline transition-colors duration-300 hover:text-black hover:underline ml-2"
+                          onClick={() => setIsMenuOpen(false)}
+                          href="/About-me"
+                        >
+                          About
+                        </Link>
+                      </li>
+                      <li>
+                        <FontAwesomeIcon color="black" icon={faMessage} size="lg" />
+                        <Link
+                          className="text-gray-600 no-underline transition-colors duration-300 hover:text-black hover:underline ml-2"
+                          onClick={() => setIsMenuOpen(false)}
+                          href="/Contact"
+                        >
+                          Contact
+                        </Link>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </div>
           )}
         </div>
