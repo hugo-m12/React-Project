@@ -20,10 +20,13 @@ function HomeView() {
     <>
       <article>
         <div className="Main-banner">
-          <img src="src/assets/images/banner test.jpg" alt="main-banner" />
+          <img src="src/assets/images/banner/Banner.jpg" alt="main-banner" />
         </div>
       </article>
-      <section className="flex justify-center">
+      <h2 className="text-5xl text-center font-black mt-10 mb-[-30px] ">
+        Recent Work
+      </h2>
+      <section className="flex justify-center mb-0 mt-0">
   {locations && locations.length > 0 ? (
     <div className="flex flex-col gap-6 m-12 sm:m-8 md:m-12 lg:m-16 xl:m-24">
       <div className="flex flex-wrap justify-center gap-12">

@@ -83,13 +83,6 @@ function Header() {
 
           {isMenuOpen && (
             <div className="md:hidden fixed inset-x-4 top-0 bottom-0 h-[250px] w-[570px] flex justify-center bg-white shadow-lg z-50 transform translate-y-[40%] transition-transform duration-300 ease-out">
-              <Link href="/">
-                <img
-                  className="logo flex left-8 top-16"
-                  src="src/assets/images/logo/logofinal.png"
-                  alt="logo"
-                />
-              </Link>
               <ul className="flex flex-col gap-6 p-6 text-black text-lg">
                 <li>
                   <FontAwesomeIcon icon={faHouse} size="lg" />
