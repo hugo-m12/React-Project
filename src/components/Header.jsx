@@ -90,9 +90,9 @@ function Header() {
                 style={{
                   position: 'absolute',
                   top: '45%',
-                  left: '47%',
+                  left: '44%',
                   transform: 'translate(-70%, -70%)',
-                  width: '100vw',
+                  width: '90vw',
                   maxWidth: '400px',
                   maxHeight: '90vh',
                 }}
