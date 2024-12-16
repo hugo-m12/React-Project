@@ -8,7 +8,7 @@ import LoadingAnim from "../components/loadingAnim";
 
 function LocationDetailView() {
   const params = useParams();
-  const [city, setCity] = useState([]);
+  const [city, setCity] = useState({});
   const [cityWeather, setCityWeather] = useState([]);
   const [forecastWeather, setForecastWeather] = useState([]);
   const [, setLocation] = useLocation();
@@ -93,7 +93,7 @@ function LocationDetailView() {
       </article>
       <section>
         <div className="p-5">
-          <LocationsMap locations={city} className="p-5" />
+          <LocationsMap location={city} className="p-5" />
         </div>
       </section>
       <section className="px-4">

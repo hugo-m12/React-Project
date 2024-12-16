@@ -1,28 +1,27 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { PropTypes } from "prop-types";
+import PropTypes from "prop-types";
 import LoadingAnim from "./loadingAnim";
 import "leaflet/dist/leaflet.css";
 
-function LocationsMap({ locations }) {
+const LocationsMap = ({ location }) => {
+
   LocationsMap.propTypes = {
-    locations: PropTypes.object,
+    location: PropTypes.object,
   };
+
   return (
     <div>
-      {locations.coordinates && locations.coordinates.length > 0 ? (
+      {location.coordinates && location.coordinates.length > 0 ? (
         <MapContainer className="h-[300px]"
-          center={locations.coordinates}
+          center={location.coordinates}
           zoom={12}
           scrollWheelZoom={false}
         >
           <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-
-          <>
-            <Marker position={locations.coordinates}>
-              <Popup>{locations.city}</Popup>
-            </Marker>
-          </>
+          <Marker position={location.coordinates}>
+            <Popup>{location.city}</Popup>
+          </Marker>
         </MapContainer>
       ) : (
         <div className="flex items-center justify-center p-20">
@@ -31,6 +30,7 @@ function LocationsMap({ locations }) {
       )}
     </div>
   );
-}
+};
 
 export default LocationsMap;
+
