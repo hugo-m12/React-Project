@@ -23,7 +23,7 @@ function HomeView() {
           <img src="src/assets/images/banner/Banner.jpg" alt="main-banner" />
         </div>
       </article>
-      <h2 className="text-5xl text-center font-black mt-10 mb-[-30px] ">
+      <h2 className="text-5xl text-center underline font-black mt-10 mb-[-30px] ">
         Recent Work
       </h2>
       <section className="flex justify-center mb-0 mt-0">
@@ -48,10 +48,10 @@ function HomeView() {
   )}
 </section>
 
-      <h2 className="text-5xl text-center font-black mt-10">
+      <h2 className="text-5xl text-center underline font-black mt-10 mb-[-20]">
         Visited Locations
       </h2>
-      <section className="globe-section">
+      <section className="globe-section mb-[-20]">
         <div className="globe-container">
           <LocationsGlobe />
         </div>

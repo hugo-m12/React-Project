@@ -53,7 +53,7 @@ function LocationDetailView() {
       <section className="mt-[30px]">
         <div className="text-3xl text-center font-bold mb-8 sm:mb-16">
           <h1 className="text-xl sm:text-3xl">{city.country}</h1>
-          <h1 className="text-2xl sm:text-4xl">{city.city}</h1>
+          <h1 className="text-2xl underline sm:text-4xl">{city.city}</h1>
           <p className="text-lg sm:text-xl">{city.arrivalDate}</p>
         </div>
         <div className="p-5">
