@@ -60,6 +60,7 @@ function LocationDetailView() {
           <Swiper
             modules={[EffectFade]}
             effect="fade"
+            autoHeight={true}
             slidesPerView={1}
             pagination={{ clickable: true }}
             navigation
