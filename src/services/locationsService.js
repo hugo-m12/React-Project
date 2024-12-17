@@ -17,7 +17,7 @@ async function loadLocationsData() {
         return(result);
 
     } catch (error) {
-        console.error(error); 
+        console.error("Error fetching the current Weather:" + error); 
         return [];
     }
   }
@@ -29,7 +29,7 @@ async function loadLocationsData() {
         return(result);
         
     } catch (error) {
-        console.error(error); 
+        console.error("Error fetching the 5 day forecast:" + error); 
         return [];
     }
   }

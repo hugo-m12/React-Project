@@ -54,7 +54,13 @@ function LocationDetailView() {
         <div className="text-3xl text-center font-bold mb-8 sm:mb-16">
           <h1 className="text-xl sm:text-3xl">{city.country}</h1>
           <h1 className="text-2xl underline sm:text-4xl">{city.city}</h1>
-          <p className="text-lg sm:text-xl">{city.arrivalDate}</p>
+
+          <div className="mt-4">
+            <h2 className="text-lg sm:text-xl">Trip Dates</h2>
+            <p className="text-sm sm:text-base mt-1">{city.arrivalDate}</p>
+            <h2 className="text-lg sm:text-xl">to</h2>
+            <p className="text-sm sm:text-base mt-1">{city.departureDate}</p>
+          </div>
         </div>
         <div className="p-5">
           <Swiper
@@ -104,7 +110,7 @@ function LocationDetailView() {
                 <h1 className="text-xl font-bold mb-3 md:text-3xl">
                   Current weather
                 </h1>
-                <h2 className="text-lg font-bold mb-4 md:text-2xl">
+                <h2 className="text-lg font-bold underline mb-4 md:text-2xl">
                   {city.city}
                 </h2>
                 {cityWeather.weather.map((data) => (

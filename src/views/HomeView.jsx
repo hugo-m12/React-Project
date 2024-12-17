@@ -51,8 +51,8 @@ function HomeView() {
       <h2 className="text-5xl text-center underline font-black mt-10 mb-[-20]">
         Visited Locations
       </h2>
-      <section className="globe-section mb-[-20]">
-        <div className="globe-container">
+      <section className="flex justify-center mb-[-20]">
+        <div className="mb-[-20]">
           <LocationsGlobe />
         </div>
       </section>

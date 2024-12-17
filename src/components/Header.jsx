@@ -81,100 +81,90 @@ function Header() {
           </div>
 
           {isMenuOpen && ( // ajust this in mobile later
-            <div
-              className={`md:hidden fixed inset-0 bg-black bg-opacity-90 backdrop-blur-sm flex flex-col items-center justify-center p-4 transition-all duration-300 ease-in-out`}
-              style={{ zIndex: isMenuOpen ? "50" : "-1" }}
-            >
-              <div
-                style={{
-                  position: "absolute",
-                  top: "45%",
-                  left: "44%",
-                  transform: "translate(-70%, -70%)",
-                  width: "90vw",
-                  maxWidth: "400px",
-                  maxHeight: "90vh",
-                }}
-              >
-                <div className="bg-white rounded-lg shadow-xl transform-gpu transition-all duration-300 ease-in-out">
-                  <button
-                    onClick={() => setIsMenuOpen(false)}
-                    className="absolute top-4 right-4 text-gray-500 hover:text-gray-900"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-8 w-8"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M6 18L18 6M6 6l12 12"
-                      />
-                    </svg>
-                  </button>
-                  <nav>
-                    <ul className="flex flex-col gap-8 p-8 text-black text-lg text-center">
-                      <li>
-                        <FontAwesomeIcon icon={faHouse} size="lg" />
-                        <Link
-                          className="text-gray-600 no-underline transition-colors duration-300 hover:text-black hover:underline ml-2"
-                          onClick={() => setIsMenuOpen(false)}
-                          href="/"
-                        >
-                          Home
-                        </Link>
-                      </li>
-                      <li>
-                        <FontAwesomeIcon
-                          color="black"
-                          icon={faLocationDot}
-                          size="lg"
-                        />
-                        <Link
-                          className="text-gray-600 no-underline transition-colors duration-300 hover:text-black hover:underline ml-2"
-                          onClick={() => setIsMenuOpen(false)}
-                          href="/AddLocation"
-                        >
-                          Add a new location
-                        </Link>
-                      </li>
-                      <li>
-                        <FontAwesomeIcon
-                          color="black"
-                          icon={faUser}
-                          size="lg"
-                        />
-                        <Link
-                          className="text-gray-600 no-underline transition-colors duration-300 hover:text-black hover:underline ml-2"
-                          onClick={() => setIsMenuOpen(false)}
-                          href="/About-me"
-                        >
-                          About
-                        </Link>
-                      </li>
-                      <li>
-                        <FontAwesomeIcon
-                          color="black"
-                          icon={faMessage}
-                          size="lg"
-                        />
-                        <Link
-                          className="text-gray-600 no-underline transition-colors duration-300 hover:text-black hover:underline ml-2"
-                          onClick={() => setIsMenuOpen(false)}
-                          href="/Contact"
-                        >
-                          Contact
-                        </Link>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
+             <div
+             className={`md:hidden fixed inset-0 bg-black bg-opacity-90 backdrop-blur-sm flex flex-col items-end justify-start p-4 transition-all duration-300 ease-in-out`}
+             style={{ zIndex: isMenuOpen ?  "100" : "-1", pointerEvents: isMenuOpen ? "auto" : "none" }}
+             onClick={() => setIsMenuOpen(false)}
+           >
+             <div className={`bg-white rounded-lg shadow-xl text-center transform-gpu transition-all duration-300 ease-in-out max-w-md w-full h-[400px] mt-4 ${
+               isMenuOpen ? "flex justify-center"  : '-translate-x-auto '
+             }`}>
+               <button
+                 onClick={(e) => {
+                   e.stopPropagation();
+                   setIsMenuOpen(false);
+                 }}
+                 className="absolute top-4 right-4 text-gray-500 hover:text-gray-900"
+               >
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   className="h-8 w-8"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                 >
+                   <path
+                     strokeLinecap="round"
+                     strokeLinejoin="round"
+                     strokeWidth={2}
+                     d="M6 18L18 6M6 6l12 12"
+                   />
+                 </svg>
+               </button>
+               <nav className="flex flex-col items-center justify-between h-full pt-16">
+                 <ul className="text-black text-lg w-full">
+                   <li className="py-4 border-b border-gray-200 last:border-none">
+                     <FontAwesomeIcon icon={faHouse} size="lg" className="mr-2" />
+                     <Link
+                       onClick={(e) => {
+                         e.stopPropagation();
+                         setIsMenuOpen(false);
+                       }}
+                       href="/"
+                     >
+                       Home
+                     </Link>
+                   </li>
+                   <li className="py-4 border-b border-gray-200">
+                     <FontAwesomeIcon icon={faLocationDot} size="lg" className="mr-2" />
+                     <Link
+                       onClick={(e) => {
+                         e.stopPropagation();
+                         setIsMenuOpen(false);
+                       }}
+                       href="/AddLocation"
+                     >
+                       Add a new location
+                     </Link>
+                   </li>
+                   <li className="py-4 border-b border-gray-200">
+                     <FontAwesomeIcon icon={faUser} size="lg" className="mr-2" />
+                     <Link
+                       onClick={(e) => {
+                         e.stopPropagation();
+                         setIsMenuOpen(false);
+                       }}
+                       href="/About-me"
+                     >
+                       About
+                     </Link>
+                   </li>
+                   <li className="py-4">
+                     <FontAwesomeIcon icon={faMessage} size="lg" className="mr-2" />
+                     <Link
+                       onClick={(e) => {
+                         e.stopPropagation();
+                         setIsMenuOpen(false);
+                       }}
+                       href="/Contact"
+                     >
+                       Contact
+                     </Link>
+                   </li>
+                 </ul>
+               </nav>
+             </div>
+           </div>
           )}
         </div>
       </header>

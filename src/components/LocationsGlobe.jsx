@@ -51,7 +51,7 @@ function LocationsGlobe() {
       backgroundColor="rgba(255,255,255,255)"
       labelText={"label"}
       labelSize={1.6}
-      width={800}
+      width={400}
       height={600}
       hexPolygonResolution={3}
       pointsData={pointsData}
