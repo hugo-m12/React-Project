@@ -36,5 +36,4 @@ function App() {
 export default App;
 
 //TODO: // fix swipper bug when resizing and in porto images
-//  // fix prop warning fix home and about me page in mobile //fix resolution on swiper images 
 
