@@ -14,20 +14,20 @@
       "LocationImages": [
         {
           "filename":"1",
-          "path": "Images/location-images/porto/1.JPG"
+          "path": "/Images/Location-Images/porto/1.JPG"
         },
         {
           "filename":"2",
-          "path": "Images/location-images/porto/2.JPG"
+          "path": "/Images/Location-Images/porto/2.JPG"
         },
         {
           "filename":"3",
-          "path": "Images/location-images/porto/3.JPG"
+          "path": "/Images/Location-Images/porto/3.JPG"
         }
       ],
       "thumbnail": {
         "filename": "3",
-        "path": "Images/location-images/porto/3.JPG"
+        "path": "/Images/Location-Images/porto/3.JPG"
     }
     },
     {
@@ -45,20 +45,20 @@
       "LocationImages": [
         {
           "filename":"1",
-          "path": "Images/location-images/barcelona/1.JPG"
+          "path": "/Images/Location-Images/barcelona/1.JPG"
         },
         {
           "filename":"2",
-          "path": "Images/location-images/barcelona/2.JPG"
+          "path": "/Images/Location-Images/barcelona/2.JPG"
         },
         {
           "filename":"3",
-          "path": "Images/location-images/barcelona/3.JPG"
+          "path": "/Images/Location-Images/barcelona/3.JPG"
         }
       ],
       "thumbnail": {
         "filename": "3",
-        "path": "Images/location-images/barcelona/3.JPG"
+        "path": "/Images/Location-Images/barcelona/3.JPG"
     }
     },
     {
@@ -76,20 +76,20 @@
       "LocationImages": [
         {
           "filename":"1",
-          "path": "Images/location-images/combarro/1.JPG"
+          "path": "/Images/Location-Images/combarro/1.JPG"
         },
         {
           "filename":"2",
-          "path": "Images/location-images/combarro/2.JPG"
+          "path": "/Images/Location-Images/combarro/2.JPG"
         },
         {
           "filename":"3",
-          "path": "Images/location-images/combarro/3.JPG"
+          "path": "/Images/Location-Images/combarro/3.JPG"
         }
       ],
       "thumbnail": {
         "filename": "3",
-        "path": "Images/location-images/combarro/3.JPG"
+        "path": "/Images/Location-Images/combarro/3.JPG"
     }
     },
     {
@@ -107,20 +107,20 @@
       "LocationImages": [
         {
           "filename":"1",
-          "path": "Images/location-images/amsterdam/1.JPG"
+          "path": "/Images/Location-Images/amsterdam/1.JPG"
         },
         {
           "filename":"2",
-          "path": "Images/location-images/amsterdam/2.JPG"
+          "path": "/Images/Location-Images/amsterdam/2.JPG"
         },
         {
           "filename":"3",
-          "path": "Images/location-images/amsterdam/3.JPG"
+          "path": "/Images/Location-Images/amsterdam/3.JPG"
         }
       ],
       "thumbnail": {
         "filename": "2",
-        "path": "Images/location-images/amsterdam/2.JPG"
+        "path": "/Images/Location-Images/amsterdam/2.JPG"
     }
     },
     {
@@ -138,20 +138,20 @@
         "LocationImages": [
         {
           "filename":"1",
-          "path": "Images/location-images/sintra/1.JPG"
+          "path": "/Images/Location-Images/sintra/1.JPG"
         },
         {
           "filename":"2",
-          "path": "Images/location-images/sintra/2.JPG"
+          "path": "/Images/Location-Images/sintra/2.JPG"
         },
         {
           "filename":"3",
-          "path": "Images/location-images/sintra/3.JPG"
+          "path": "/Images/Location-Images/sintra/3.JPG"
         }
       ],
       "thumbnail": {
         "filename": "1",
-        "path": "Images/location-images/sintra/1.JPG"
+        "path": "/Images/Location-Images/sintra/1.JPG"
     }
       }
   ]

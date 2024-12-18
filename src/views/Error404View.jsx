@@ -6,7 +6,7 @@ function Error404View() {
           <h1 className="text-9xl font-black text-gray-200">404</h1>
           <img
             className="w-64 h-64"
-            src="src/assets/images/404-error-page/errorimg.png"
+            src="Images/404-error-page/errorimg.png"
             alt="error-img"
           />
           <p className="mb-4">Uh-oh!</p>
