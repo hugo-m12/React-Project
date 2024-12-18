@@ -34,7 +34,7 @@ function HomeView() {
           <Link
             className="no-underline text-inherit"
             key={value.id}
-            href={`/${value.city}`}
+            href={`/${value.slug}`}
           >
             <LocationCard locations={value} />
           </Link>

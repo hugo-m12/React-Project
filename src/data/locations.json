@@ -3,6 +3,7 @@
       "id": 1,
       "country": "Portugal",
       "city": "Porto",
+      "slug": "porto",
       "arrivalDate": "2022-12-19",
       "departureDate": "2022-12-20",
       "coordinates": [
@@ -33,6 +34,7 @@
       "id": 2,
       "country": "Spain",
       "city": "Barcelona",
+      "slug": "barcelona",
       "arrivalDate": "2022-08-15",
       "departureDate": "2022-08-20",
       "coordinates": [
@@ -63,6 +65,7 @@
       "id": 3,
       "country": "Spain",
       "city": "Combarro",
+      "slug": "combarro",
       "arrivalDate": "2024-09-23",
       "departureDate": "2024-09-27",
       "coordinates": [
@@ -93,6 +96,7 @@
       "id": 4,
       "country": "Netherlands",
       "city": "Amsterdam",
+      "slug": "amsterdam",
       "arrivalDate": "2019-05-29",
       "departureDate": "2019-06-01",
       "coordinates": [
@@ -123,6 +127,7 @@
         "id": 5,
         "country": "Portugal",
         "city": "Sintra",
+        "slug": "sintra",
         "arrivalDate": "2022-07-29",
         "departureDate": "2022-08-03",
         "coordinates": [
