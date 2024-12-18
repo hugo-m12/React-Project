@@ -20,7 +20,7 @@ function HomeView() {
     <>
       <article>
         <div className="flex justify-center items-center md: mt-5 p-7">
-          <img src="src/assets/images/banner/Banner.jpg" alt="main-banner" />
+          <img src="Images/banner/Banner.jpg" alt="main-banner" />
         </div>
       </article>
       <h2 className="text-5xl text-center underline font-black mt-10 mb-[-30px] ">

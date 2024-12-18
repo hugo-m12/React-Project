@@ -48,7 +48,7 @@ function AboutView() {
 
 const PortraitImage = ({ isLoaded }) => (
   <div className={`portrait-image-container ${isLoaded ? "loaded" : ""}`}>
-    <img src="src/assets/images/portrait/IMG_7981.jpg" alt="Portrait" />
+    <img src="Images/portrait/IMG_7981.jpg" alt="Portrait" />
   </div>
 );
 

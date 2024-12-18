@@ -19,7 +19,7 @@ function Header() {
           <Link href="/">
             <img
               className="absolute h-[60px] w-[140px] top-0 left-0 z-50 md:h-[100px] md:w-[220px] md:top-0 md:left-0 cursor-pointer"
-              src="src/assets/images/logo/logofinal.png"
+              src="Images/logo/logofinal.png"
               alt="logo"
             />
           </Link>
