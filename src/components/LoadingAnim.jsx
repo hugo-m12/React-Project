@@ -1,3 +1,5 @@
+import './LoadingAnim.css';
+
 function LoadingAnim() {
   return (
     <>
