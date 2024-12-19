@@ -35,5 +35,3 @@ function App() {
 
 export default App;
 
-//TODO: // fix swipper bug when resizing and in porto images
-
