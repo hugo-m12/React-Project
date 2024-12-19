@@ -2,7 +2,6 @@ import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
-
 function Footer(){
     return (
     <>

@@ -80,7 +80,7 @@ function Header() {
             </button>
           </div>
 
-          {isMenuOpen && ( // ajust this in mobile later
+          {isMenuOpen && ( 
              <div
              className={`md:hidden fixed inset-0 bg-black bg-opacity-90 backdrop-blur-sm flex flex-col items-end justify-start p-4 transition-all duration-300 ease-in-out`}
              style={{ zIndex: isMenuOpen ?  "100" : "-1", pointerEvents: isMenuOpen ? "auto" : "none" }}
