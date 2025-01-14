@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { PropTypes } from "prop-types";
 import "./AboutMePage.css";
 
 function AboutView() {
@@ -16,15 +17,15 @@ function AboutView() {
     <div className="md:p-12 w-full md:w-1/2 order-2 md:order-1 p-7">
       <h1 className="text-3xl mb-5">Hugo Moreira</h1>
       <p className="mb-3 text-lg">
-        I'm a Junior Fullstack developer based in porto, Portugal that also
+        I&apos;m a Junior Fullstack developer based in porto, Portugal that also
         has a passion for photography and travel. Movies and games and other
         types of media are also part of my main hobbies, cinematography in
         films beeing one of the the main influences for some of my work in
         photography.
       </p>
       <p className="mb-3 text-lg">
-        Since my early teenage years, I've had a keen eye for capturing
-        life's precious moments. Whether it's the beauty of nature, the
+        Since my early teenage years, I&apos;ve had a keen eye for capturing
+        life&apos;s precious moments. Whether it&apos;s the beauty of nature, the
         complexity of human emotions, or the simplicity of everyday scenes,
         I find joy in preserving these instants through my lens.
       </p>
@@ -47,9 +48,14 @@ function AboutView() {
 }
 
 const PortraitImage = ({ isLoaded }) => (
+
   <div className={`portrait-image-container ${isLoaded ? "loaded" : ""}`}>
     <img src="Images/portrait/IMG_7981.jpg" alt="Portrait" />
   </div>
 );
 
-export default AboutView;
+PortraitImage.propTypes = {
+  isLoaded: PropTypes.bool.isRequired,
+};
+
+export default AboutView

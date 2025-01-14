@@ -1,4 +1,3 @@
-import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import PropTypes from "prop-types";
 import LoadingAnim from "./loadingAnim";

@@ -1,6 +1,6 @@
 import { faFileImage } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
+import { useState } from "react";
 
 function AddLocationView() {
   const [country, setCountry] = useState("");

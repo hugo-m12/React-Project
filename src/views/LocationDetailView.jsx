@@ -26,7 +26,7 @@ function LocationDetailView() {
     };
 
     fetchCityData();
-  }, [params.locationName]);
+  }, [params.locationName ,setLocation]);
 
   useEffect(() => {
     const fetchWeatherData = async () => {
@@ -36,7 +36,7 @@ function LocationDetailView() {
       setCityWeather(result);
     };
     fetchWeatherData();
-  }, []);
+  }, [params.locationName]);
 
   useEffect(() => {
     const fetchForecastData = async () => {
@@ -46,7 +46,7 @@ function LocationDetailView() {
       setForecastWeather(result);
     };
     fetchForecastData();
-  }, []);
+  }, [params.locationName]);
 
   return (
     <>
