@@ -1,4 +1,4 @@
-# FrontEnd Personal Website Project 
+# FrontEnd Personal Website "Shots By Hugo Moreira" Project 
 
 This Project Was developed for the Front-End Final Project for The Flag Fullstack Web Devlopment Course, the main goal of this project was to develop a full-stack FrontEnd application that fetches info from an external api and an internal json file.
 The primary focus is on frontend development, with a responsive and user-friendly UI.
